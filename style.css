@@ -3,11 +3,26 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     width: 870px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
+}
+
+.webinar-confirmation-body {
+    padding-top: 30px;
+}
+
+.webinar-confirmation-main-div {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+a {
+    color: rgb(0, 0, 238);
+    text-decoration: none;
 }
 
 .main-logo-img {
@@ -19,6 +34,10 @@ h1 {
     font-weight: 400;
     font-size: 62px;
     margin: 0;
+}
+
+.webinar-confirmation-body h1 {
+    font-size: 44px;
 }
 
 h1 span {
@@ -82,6 +101,10 @@ button {
     height: 50px;
 }
 
+button:hover {
+    box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.22), 0 233px 233px 0 rgba(255, 255, 255, 0.12) inset;
+}
+
 .copyright-text-1-p {
     font-size: 10px;
     color: rgb(45, 45, 45);
@@ -94,4 +117,121 @@ button {
 .copyright-text-2-p {
     color: rgb(45, 45, 45);
     font-size: 12px;
+}
+
+.opt-in-pop-up-div {
+    display: none;
+}
+
+.after-landing-page-cta-clicked .opt-in-pop-up-div {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.opt-in-info-div {
+    top: 0;
+    position: fixed;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    width: 100%;
+    margin-top: 40px;
+    max-width: 720px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.opt-in-info-inner-div {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opt-in-qualifier-div {
+    color: rgb(47, 47, 47);
+    display: flex;
+    flex-direction: column;
+}
+
+.opt-in-qualifier-div .only-span {
+    text-decoration: underline;
+}
+
+.opt-in-info-div input {
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 12px 18px;
+}
+
+.opt-in-info-div input::-webkit-inner-spin-button,
+.opt-in-info-div input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.opt-in-info-div input:focus {
+    border-color: #42B0E2;
+    outline: none;
+}
+
+.opt-in-info-div input:first-of-type {
+    margin-top: 40px;
+}
+
+.opt-in-info-div input:last-of-type {
+    margin-bottom: 35px;
+}
+
+.opt-in-button {
+    color: white;
+    background-color: #ef0f09;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 50%;
+    font-size: 26px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.2), 0 0 3px rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 55px;
+}
+
+.opt-in-button:hover {
+    box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.22), 0 233px 233px 0 rgba(255, 255, 255, 0.12) inset;
+}
+
+.opt-in-button img {
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.opt-in-consent-span {
+    font-size: 10px;
+    color: rgb(47, 47, 47);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
 }
