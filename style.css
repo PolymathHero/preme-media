@@ -228,9 +228,7 @@ button:hover {
     color: rgb(47, 47, 47);
 }
 
-video {
-    width: 100%;
-    height: auto;
+iframe {
     margin-top: 20px;
     margin-bottom: 40px;
     border-radius: 10px;
