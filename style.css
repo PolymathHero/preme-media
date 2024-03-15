@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    /* Add other formats if necessary */
+}
+
 body {
     margin: 0;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: Hel, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     width: 870px;
@@ -9,6 +15,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
+    font-family: 'Source Sans 3', Arial;
 }
 
 .webinar-confirmation-body {
@@ -63,12 +70,20 @@ ul {
 }
 
 li {
-    list-style: "\2705";
+    list-style: none;
     font-size: 24px;
     padding-bottom: 6px;
     margin-bottom: 6px;
     padding-left: 2em;
     text-align: left;
+}
+
+.list-div img {
+    width: 30px;
+    height: 24px;
+    margin-right: 1em;
+    flex-shrink: 0;
+
 }
 
 .button-div {
@@ -232,4 +247,54 @@ iframe {
     margin-top: 20px;
     margin-bottom: 40px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .main-div h1 {
+        font-size: 25px;
+    }
+
+    .list-div {
+        align-items: flex-start;
+    }
+
+    .list-div ul {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .list-div li {
+        padding-left: 0;
+        font-size: 17px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .list-div img {
+        width: 25px;
+        height: 20px;
+        margin-right: 0.75em;
+        flex-shrink: 0;
+    }
+
+    .main-div button {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .main-div .right-chevron-img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .after-landing-page-cta-clicked .opt-in-info-div {
+        
+    }
 }
